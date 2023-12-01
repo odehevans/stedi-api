@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: prod-stedi-evans
-          image: gcr.io/cubs-consulting/stedi # This image needs to refer to the NEW Artifact registry repositorry
+          image: us-docker.pkg.dev/scrum-team-7/evans-api/stedi-api:latest # This image needs to refer to the NEW Artifact registry repositorry
           env:
             - name: REDIS_PASSWORD
               valueFrom:
